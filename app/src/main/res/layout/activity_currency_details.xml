@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.as.waluty.CurrencyDetails">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageViewDetailsChart"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/buttonLine" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/textViewDetails"
+        android:layout_alignTop="@+id/textViewDetails2"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:id="@+id/imageViewDetailFrom"
+        android:src="@drawable/default_status"
+        android:layout_alignBottom="@+id/textViewDetails"
+        android:layout_toLeftOf="@+id/textViewDetails"
+        android:layout_toStartOf="@+id/textViewDetails"
+        android:layout_marginRight="10dp" />
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:id="@+id/imageViewDetailTo"
+        android:src="@drawable/default_status"
+        android:layout_below="@+id/textView19"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1d"
+        android:id="@+id/button1d"
+        android:onClick="show1d"
+        android:layout_alignTop="@+id/button1m"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="5d"
+        android:id="@+id/button5d"
+        android:layout_above="@+id/textView24"
+        android:layout_toRightOf="@+id/button1d"
+        android:layout_toEndOf="@+id/button1d" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1m"
+        android:id="@+id/button1m"
+        android:layout_below="@+id/textView20"
+        android:layout_toRightOf="@+id/button5d"
+        android:layout_toEndOf="@+id/button5d" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3m"
+        android:id="@+id/button3m"
+        android:layout_below="@+id/textView20"
+        android:layout_toRightOf="@+id/button1m"
+        android:layout_toEndOf="@+id/button1m" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1y"
+        android:id="@+id/button1y"
+        android:layout_below="@+id/textView20"
+        android:layout_toRightOf="@+id/textView24"
+        android:layout_toEndOf="@+id/textView24" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="5y"
+        android:id="@+id/button5y"
+        android:layout_below="@+id/textView20"
+        android:layout_toRightOf="@+id/button1y"
+        android:layout_toEndOf="@+id/button1y" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/textViewDetails2"
+        android:layout_alignBottom="@+id/imageViewDetailTo"
+        android:layout_toRightOf="@+id/imageViewDetailTo"
+        android:layout_toEndOf="@+id/imageViewDetailTo"
+        android:layout_marginLeft="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Waluta  Bazowa"
+        android:id="@+id/textView19"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="  Częstotliwość wykresu: dzień, 2 dni, miesiąc, 3 miesiące, rok, 5 lat "
+        android:id="@+id/textView20"
+        android:textSize="10dp"
+        android:layout_marginTop="94dp"
+        android:layout_below="@+id/textView21"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Czas aktualizacji:"
+        android:id="@+id/textView21"
+        android:singleLine="false"
+        android:layout_below="@+id/view"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginRight="10dp" />
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#000000"
+        android:id="@+id/view"
+        android:layout_below="@+id/textViewDetails"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/textViewDetailsTime"
+        android:layout_alignTop="@+id/textView21"
+        android:layout_toRightOf="@+id/textView21"
+        android:layout_toEndOf="@+id/textView21" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#000000"
+        android:id="@+id/view2"
+        android:layout_below="@+id/textView19"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#000000"
+        android:id="@+id/view3"
+        android:layout_marginBottom="21dp"
+        android:layout_above="@+id/button1d"
+        android:layout_alignRight="@+id/textViewDetails"
+        android:layout_alignEnd="@+id/textViewDetails" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Waluta  Docelowa"
+        android:id="@+id/textView22"
+        android:layout_above="@+id/imageViewDetailFrom"
+        android:layout_alignRight="@+id/imageViewDetailsChart"
+        android:layout_alignEnd="@+id/imageViewDetailsChart" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="="
+        android:id="@+id/textView23"
+        android:layout_alignBaseline="@+id/textViewDetails2"
+        android:layout_alignBottom="@+id/textViewDetails2"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Liniowy"
+        android:id="@+id/buttonLine"
+        android:onClick="show1d"
+        android:layout_alignTop="@+id/buttonBar"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Słupkowy"
+        android:id="@+id/buttonBar"
+        android:onClick="show1d"
+        android:layout_below="@+id/textView24"
+        android:layout_toRightOf="@+id/buttonLine"
+        android:layout_toEndOf="@+id/buttonLine" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Świecowy"
+        android:id="@+id/buttonCandle"
+        android:onClick="show1d"
+        android:layout_above="@+id/imageViewDetailsChart"
+        android:layout_toRightOf="@+id/buttonBar"
+        android:layout_toEndOf="@+id/buttonBar" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="  Typ wykresu: Liniowy, Świecowy, Słupkowy"
+        android:id="@+id/textView24"
+        android:textSize="10dp"
+        android:layout_below="@+id/button1d"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Wykres kursu"
+        android:id="@+id/textView25"
+        android:textSize="25dp"
+        android:layout_above="@+id/view3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Wykres kursu"
+        android:id="@+id/textViewDetailsChart"
+        android:textSize="25dp"
+        android:layout_above="@+id/view3"
+        android:layout_alignLeft="@+id/textView23"
+        android:layout_alignStart="@+id/textView23"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>

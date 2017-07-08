@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="0dp">
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:id="@+id/imageViewStatus"
+        android:src="@drawable/default_status"
+        android:contentDescription="logo"
+        android:layout_alignBottom="@+id/textViewAmount"
+        android:layout_toLeftOf="@+id/textViewTo"
+        android:layout_toStartOf="@+id/textViewTo"
+        android:layout_marginRight="10dp" />
+
+    <!--<TextView-->
+        <!--android:id="@+id/textViewFrom"-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:paddingBottom="2dip"-->
+        <!--android:textColor="@color/colorAccent"-->
+        <!--android:text="1"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:layout_centerHorizontal="true" />-->
+
+    <TextView
+        android:id="@+id/textViewCurrency"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:textColor="#5d5d5d"
+        android:textStyle="bold"
+        android:text="3"
+        android:layout_marginRight="41dp"
+        android:layout_marginEnd="41dp"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/imageViewStatus"
+        android:layout_toStartOf="@+id/imageViewStatus" />
+
+    <TextView
+        android:id="@+id/textViewTo"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:paddingBottom="2dip"
+        android:textColor="@color/colorAccent"
+        android:text="TO"
+        android:layout_alignBottom="@+id/imageViewStatus"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/textViewFrom"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:paddingBottom="2dip"
+        android:textColor="@color/colorAccent"
+        android:text="FROM"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/textViewAmount"
+        android:layout_toEndOf="@+id/textViewAmount" />
+
+    <TextView
+        android:id="@+id/textViewAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="2dip"
+        android:textColor="@color/colorAccent"
+        android:text="A"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:id="@+id/imageViewBase"
+        android:src="@drawable/default_status"
+        android:contentDescription="logo"
+        android:layout_alignBottom="@+id/textViewFrom"
+        android:layout_toRightOf="@+id/textViewFrom"
+        android:layout_toEndOf="@+id/textViewFrom" />
+
+</RelativeLayout>

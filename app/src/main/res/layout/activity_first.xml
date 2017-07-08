@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_first"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.as.waluty.FirstActivity"
+    android:background="@android:color/holo_blue_light">
+
+    <Button
+        android:text="ULUBIONE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonFavorite"
+        android:onClick="openFavoriteF"
+        android:drawableLeft="@drawable/star"
+        android:layout_above="@+id/buttonCalculator"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textStyle="normal|bold"
+        android:background="@android:color/white" />
+
+    <Button
+        android:text="MAPA KANTORÓW"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonMaps"
+        android:onClick="openMaps"
+        android:drawableLeft="@drawable/map"
+        android:layout_below="@+id/buttonCalculator"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textStyle="normal|bold"
+        android:background="@android:color/white" />
+
+    <Button
+        android:text="KURSY NBP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonNbp"
+        android:onClick="openNbp"
+        android:drawableLeft="@drawable/bank"
+        android:layout_above="@+id/buttonLive"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:elevation="1dp"
+        android:textStyle="normal|bold"
+        android:background="@android:color/white" />
+
+    <Button
+        android:text="KALKULATOR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonCalculator"
+        android:onClick="openCalculator"
+        android:layout_centerVertical="true"
+        android:drawableLeft="@drawable/calculator"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textStyle="normal|bold"
+        android:background="?attr/colorButtonNormal" />
+
+    <Button
+        android:text="O PROGRAMIE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonAbout"
+        android:onClick="openAbout"
+        android:drawableLeft="@drawable/info"
+        android:layout_below="@+id/buttonMaps"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textStyle="normal|bold"
+        android:background="?attr/colorButtonNormal" />
+
+    <Button
+        android:text="KURSY NA ŻYWO"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonLive"
+        android:onClick="openLive"
+        android:drawableLeft="@drawable/chart"
+        android:layout_above="@+id/buttonFavorite"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textStyle="normal|bold"
+        android:textAlignment="center"
+        android:background="?attr/colorButtonNormal" />
+</RelativeLayout>

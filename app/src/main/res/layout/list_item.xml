@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="fill_parent"
+android:layout_height="wrap_content"
+android:orientation="vertical">
+
+    <ImageView
+    android:layout_width="20dp"
+    android:layout_height="20dp"
+    android:id="@+id/imageView1"
+    android:src="@drawable/default_status"
+    android:contentDescription="logo"
+    android:layout_gravity="right"
+        android:layout_alignTop="@+id/textViewCode"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="10dp" />
+
+    <TextView
+        android:id="@+id/textViewCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="2dip"
+        android:textColor="@color/colorAccent"
+        android:text="code"
+        android:layout_gravity="center_horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/imageView1"
+        android:layout_toStartOf="@+id/imageView1" />
+
+    <TextView
+    android:id="@+id/textViewCurrency"
+    android:layout_width="47dp"
+    android:layout_height="wrap_content"
+    android:paddingBottom="2dip"
+    android:textColor="@color/colorAccent"
+    android:text="cur"
+        android:layout_below="@+id/imageView1"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="28dp"
+        android:layout_marginStart="28dp"
+        android:layout_alignLeft="@+id/textViewMid"
+        android:layout_alignStart="@+id/textViewMid"
+        android:elegantTextHeight="false"
+        android:textAlignment="textEnd" />
+
+    <TextView
+    android:id="@+id/textViewMid"
+    android:layout_width="77dp"
+    android:layout_height="wrap_content"
+    android:textColor="#5d5d5d"
+    android:textStyle="bold"
+    android:text="mid"
+        android:layout_alignBottom="@+id/textViewCode"
+        android:layout_toRightOf="@+id/imageView2"
+        android:layout_toEndOf="@+id/imageView2"
+        android:layout_marginLeft="100dp" />
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:id="@+id/imageView2"
+        android:src="@drawable/pln"
+        android:contentDescription="logo"
+        android:layout_gravity="right"
+        android:layout_alignBottom="@+id/textView6"
+        android:layout_toRightOf="@+id/textView7"
+        android:layout_toEndOf="@+id/textView7" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:textColor="#5d5d5d"
+        android:textStyle="bold"
+        android:text="PLN"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="10dp" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="20dp"
+        android:layout_height="wrap_content"
+        android:textColor="#5d5d5d"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/textView6"
+        android:layout_alignEnd="@+id/textView6" />
+</RelativeLayout>

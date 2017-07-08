@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/nav_o1"
+        android:title="opcja1" />
+
+    <item android:id="@+id/nav_o2"
+        android:title="opcja2" />
+
+    <item android:id="@+id/nav_o3"
+        android:title="opcja3" />
+
+</menu>

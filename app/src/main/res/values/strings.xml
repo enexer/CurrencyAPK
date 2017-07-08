@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Kursy Walut</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="appwidget_text">WALUTA</string>
+    <string name="add_widget">Dodaj widget</string>
+    <string name="configure">Konfiguracja</string>
+</resources>
